@@ -1,0 +1,954 @@
+body {
+    font-family: "Montserrat", serif;
+    color:  rgb(105, 70, 70);
+
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(255, 233, 247);
+    font-size: 2.3em;
+    padding: 20px;
+}
+
+header {
+    background-color: rgb(255, 233, 247);
+    border: 3px rgb(105, 70, 70) solid;
+}
+
+
+
+.nav_links {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    list-style: none;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    margin-left: 3.5%;
+}
+
+.nav_links a {
+    border: 3px rgb(105, 70, 70) solid;
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+    background-color: white;
+    color:  rgb(105, 70, 70);
+}
+
+.nav_links a:hover {
+    text-decoration: underline;
+    background-color: rgb(219, 201, 213);
+}
+
+.current {
+    text-decoration:underline;
+}
+
+
+ .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    top: -40px;
+    position: absolute;
+  
+}
+  
+
+.skip a:focus{
+    position: relative; 
+    top: 0px;
+}
+
+
+
+  .whoami {
+    text-align: center;
+    padding: 20px; 
+  }
+
+  h2 {
+      text-align: center;
+      border: 2px rgb(105, 70, 70) solid;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 2em;
+      margin-left: 3%;
+      margin-right: 3%;
+      background-color: rgb(255, 233, 247);
+
+  }
+
+  .topblurb {
+    border: 2px rgb(105, 70, 70) solid;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+  }
+
+  .topblurb p {
+      /* margin-left: 3%;
+      margin-right: 3%; */
+      text-align: center;
+      padding: 10px;
+  }
+
+  footer{
+    background-color: rgb(105, 70, 70);
+    color: white;
+    padding: 3px;
+    text-align: center;
+    font-size: 1.25em;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    padding: 15px;
+  }
+
+  footer a{
+      color: white;
+  }
+
+#biopic {
+    width: 16em; 
+    height: 20em;
+    padding-top: 20px;
+}
+
+.bio {
+    border: 2px rgb(105, 70, 70) solid;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(255, 233, 247);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bio li {
+    list-style: none;
+    padding: 5px;
+}
+
+.bio ul {
+    padding: 15px;
+}
+
+.cakes{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 5fr 5fr;
+    width: 90%;
+    margin-left: 7%;
+    grid-gap: 0px;
+}
+
+img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    padding: 0px;
+    margin: 0px;
+}
+
+#cakes_description {
+    grid-column: 1/-1;
+    grid-row-start: 3;
+    padding-bottom: 10px;
+}
+
+.container {
+    border: 2px rgb(105, 70, 70) solid;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 30px;
+}
+
+.container:nth-child(even){
+    background-color: rgb(255, 233, 247);
+}
+
+.cookies{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 5fr 5fr;
+    width: 90%;
+    margin-left: 7%;
+    grid-gap: 0px;
+}
+
+#cookies_description {
+    grid-column: 1/-1;
+    grid-row-start: 3;
+    padding-bottom: 10px;
+}
+
+.xmascookies{
+    grid-column: 1/2;
+    grid-row-start: 1;
+}
+
+.lovett{
+    grid-column: 2/2;
+    grid-row-start: 1;
+}
+
+
+.other{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    /* grid-template-rows: 5fr 5fr; */
+    width: 90%;
+    margin-left: 7%;
+    grid-gap: 0px;
+}
+
+#other_description{
+    grid-column: 1/-1;
+    grid-row-start: 3;
+    padding-bottom: 10px;
+}
+
+#top {
+    text-align: center;
+    border: 2px rgb(105, 70, 70) solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.container p {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+
+#rice {
+    background-color: rgb(255, 233, 247);
+    border: 2px rgb(105, 70, 70) solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    margin-left: 3%;
+    margin-right: 5%;
+}
+
+#bread {
+    background-color:white;
+    border: 2px rgb(105, 70, 70) solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    margin-left: 3%;
+    margin-right: 5%;
+}
+
+.breadcontainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    margin-left: 5%;
+}
+
+#bagel, #challah, #wholegrain, #pretzel {
+    object-fit: contain;
+}
+
+
+
+
+#creampufftitle{
+    background-color:white;
+    /* text-align: center; */
+    border: 2px rgb(105, 70, 70) solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    margin-left: 4%;
+    margin-right: 5%;
+    grid-column: 1/-1;
+    grid-row-start: 1;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.container ul {
+    padding-left: 26px;
+    list-style:square;
+    padding-bottom: 15px;
+}
+
+#filling {
+    list-style: none;
+    text-align: center;
+    /* margin-right:10%; */
+    text-decoration: underline;
+    padding-bottom:5px;
+}
+
+#puffbase {
+    list-style: none;
+    text-align: center;
+    /* margin-right:10%; */
+    text-decoration: underline;
+    padding-bottom:5px;
+}
+
+.ingredients li {
+    list-style-type: circle;
+}
+
+.enjoy {
+    list-style: none;
+    text-align: center;
+    /* margin-right:10%; */
+    text-decoration: underline;
+    padding-bottom:5px;
+}
+
+#creampuffspic{
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom:5%;
+    /* object-fit: contain; */
+
+}
+
+#donutstitle{
+    background-color: white;
+    /* text-align: center; */
+    border: 2px rgb(105, 70, 70) solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    margin-left: 4%;
+    margin-right: 5%;
+    grid-column: 1/-1;
+    grid-row-start: 1;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+#donutspic{
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom:5%;
+    /* object-fit: contain; */
+
+}
+
+#dressing{
+    list-style: none;
+    text-align: center;
+    margin-right:10%;
+    text-decoration: underline;
+    padding-bottom:5px;
+}
+
+#saladtitle{
+    background-color: rgb(255, 233, 247);
+    /* text-align: center; */
+    border: 2px rgb(105, 70, 70) solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    margin-left: 4%;
+    margin-right: 5%;
+    grid-column: 1/-1;
+    grid-row-start: 1;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+#saladpic{
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom:5%;
+    /* object-fit: contain; */
+
+}
+
+#focacciatitle{
+    background-color: rgb(255, 233, 247);
+    /* text-align: center; */
+    border: 2px rgb(105, 70, 70) solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    margin-left: 4%;
+    margin-right: 5%;
+    grid-column: 1/-1;
+    grid-row-start: 1;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+#focacciapic{
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom:5%;
+    /* object-fit: contain; */
+
+}
+
+#gnocchititle{
+    background-color: white;
+    /* text-align: center; */
+    border: 2px rgb(105, 70, 70) solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    margin-left: 4%;
+    margin-right: 5%;
+    grid-column: 1/-1;
+    grid-row-start: 1;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+#gnocchipic{
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom:5%;
+    /* object-fit: contain; */
+
+}
+
+#pastatitle{
+    background-color: rgb(255, 233, 247);
+    border: 2px rgb(105, 70, 70) solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    margin-left: 4%;
+    margin-right: 5%;
+    grid-column: 1/-1;
+    grid-row-start: 1;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+#pastapic{
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom:5%;
+    /* object-fit: contain; */
+
+}
+
+#pastaarticle{
+    background-color: rgb(255, 233, 247);
+    border: 2px rgb(105, 70, 70) solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    margin-left: 3%;
+    margin-right: 5%;
+    grid-column: 1/-1;
+    grid-row-start: 1;
+    margin-top: 15px;
+}
+
+#contacts{
+    background-color: rgb(255, 233, 247);
+    border: 2px rgb(105, 70, 70) solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    margin-left: 3%;
+    margin-right: 5%;
+    /* grid-column: 1/-1;
+    grid-row-start: 1; */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container1{
+    border: 2px rgb(105, 70, 70) solid;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+}
+
+.contactlist li{
+    list-style-type: "\1F44D";
+    margin-left: 40px;
+}
+
+
+#springrollpic{
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom:5%;
+}
+
+#springrolltitle{
+    background-color: white;
+    border: 2px rgb(105, 70, 70) solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    margin-left: 4%;
+    margin-right: 5%;
+    grid-column: 1/-1;
+    grid-row-start: 1;
+    border-radius: 10px;
+    margin-top: 15px;
+
+}
+
+#squashtitle{
+    background-color: white;
+    border: 2px rgb(105, 70, 70) solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    margin-left: 4%;
+    margin-right: 5%;
+    margin-top: 15px;
+    grid-column: 1/-1;
+    grid-row-start: 1; 
+    border-radius: 10px;
+
+}
+
+#squashpic{
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom:5%;
+    object-fit: contain;
+
+}
+
+#form {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+}
+
+#formquestion {
+    background-color: rgb(255, 233, 247);
+    border: 2px rgb(105, 70, 70) solid;
+    padding: 10px;
+}
+
+fieldset div {
+    padding: 5px; 
+    margin: 10px;
+}
+
+#recipeinput {
+    height: 100px;
+    width: 250px;
+}
+
+#submit{
+    margin-bottom: 10px;
+}
+
+
+.parallax { 
+    /* The image used */
+    background-image: url("../imgs/donuts.jpeg");
+  
+    /* Set a specific height */
+    min-height: 600px; 
+    opacity: 50%;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.contactlist{
+    margin: 30px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.contactlist li {
+    margin-top: 15px;
+}
+
+footer p{
+    animation-duration: 3s;
+    animation-name: myanimation;
+}
+
+@keyframes myanimation {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+
+  @media screen and (min-width: 760px){
+
+    .nav_links li {
+        margin: 10px;
+        border: 5px rgb(105, 70, 70) solid;
+    }
+
+
+    #springrollcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #springrollpic{
+        width: 90%;
+        margin-left: 10%;
+        margin-top: 10%;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    #springrolltitle{
+        grid-column: 1/-1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    p.springrolls {
+        grid-column: 2/-1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .container1 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #leftcontact {
+        grid-column: 1/2;
+        padding-left: 15px;
+    }
+
+    #form {
+        grid-column: 2/-1;
+        padding-top: 20px;
+    }
+
+    #formquestion {
+        font-size: 1.2em;
+    }
+
+    .contactlist li{
+        margin-top: 30px;
+    }
+
+    .contactlist{
+        margin: 0px;
+    }
+    
+
+    .bio {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-column-gap: 5px;
+        border-radius: 30px;
+    }
+
+    #biopic {
+        margin: 20px;
+        width: 90%;
+    }
+
+    #skiphere1 {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+}
+
+@media screen and (min-width: 850px){
+    .container1 {
+        display: grid;
+        grid-template-columns: 1fr 3fr 3fr 1fr;
+    }
+    #leftcontact {
+        grid-column: 2/3;
+    }
+    #form {
+        grid-column: 3/4;
+    }
+
+    .cookies {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 3fr 1fr;
+    }
+
+    .xmascookies {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .lovett {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .champagne {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .smu {
+        grid-column: 4/-1;
+        grid-row: 1/2;
+    }
+    #cookies_description {
+        grid-column: 1/-1;
+        grid-row: 2/-1;
+    }
+
+    .cakes {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .vdaycake {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .smorescake {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .strawcake {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .bdaycake {
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+    .chocstrawb {
+        grid-column: 5/6;
+        grid-row: 1/2;
+    }
+    .choccake {
+        grid-column: 6/-1;
+        grid-row: 1/2;
+    }
+    #cakes_description {
+        grid-column: 1/-1;
+        grid-row: 2/-1;
+    }
+
+    .breadcontainer {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .bagel {
+        grid-column: 1/2;
+        /* grid-row: 1/2; */
+    }
+    .challah {
+        grid-column: 2/3;
+        /* grid-row: 1/2; */
+    }
+    .wholegrain {
+        grid-column: 3/4;
+        /* grid-row: 1/2; */
+    }
+    .pretzel {
+        grid-column: 4/-1;
+        /* grid-row: 1/2; */
+    }
+    .bread_paragraph {
+        grid-column: 1/-1;
+        padding-bottom: 20px;
+    }
+    #pastacontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #pastaarticle {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+    .bread_paragraph{
+        grid-column: 1/2;
+        line-height: 1.5;
+
+    }
+    .bread_par2 {
+        grid-column: 2/-1;
+        line-height: 1.5;
+
+    }
+
+    #springrollpic {
+        margin-top: 0px;
+        margin-left: 70px;
+        padding-right: 50px;
+        padding-bottom: 0px;
+    }
+
+    p.springrolls{
+        padding-right: 50px;
+        line-height: 1.5;
+    }
+
+    .recipepage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #recipetopblurb{
+        grid-column: 1/-1;
+        grid-row: 1/1;
+    }
+
+    #creampuffcontainer{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+
+    #creampuffspic{
+        height: 40%;
+        padding: 0px;
+        top: 0px;
+        margin-bottom: 80px;
+        object-fit: contain;
+    }
+
+    #saladcontainer{
+        grid-column: 2/-1;
+        grid-row: 2/3;
+    }
+
+    #saladpic {
+        height: 37%;
+        margin-left: 15px;
+        padding: 0px;
+        top: 0px;
+    }
+
+    #donutcontainer{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #foccontainer {
+        grid-column: 2/-1;
+        grid-row: 3/4;
+    }
+
+    #gnocchicontainer {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    #pastacontainer2 {
+        grid-column: 2/-1;
+        grid-row: 4/5;
+    }
+
+    #squashcontainer{
+        grid-column: 1/-1;
+        grid-row: 5/6;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    #squashtitle {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+    #squashcontainer ul {
+        grid-column: 2/-1;
+        grid-row-start: 2;
+        margin-left: 40px;
+        line-height: 2;
+    }
+    #squashpic {
+        grid-column: 1/2;
+        margin-left: 40px;
+    }
+
+    #donutspic {
+        height: fit-content;
+        padding: 0px;
+        top: 0px;
+        margin-bottom: 10px;
+    }
+
+    #focacciapic{
+        height: 37%;
+        margin-left: 15px;
+        padding: 0px;
+        margin-top: 10px;
+    }
+
+    #foccontainer ul{
+        line-height: 1.4;
+    }
+
+    #gnocchipic{
+        /* height: 37%; */
+        height: fit-content;
+        margin-left: 20px;
+        padding: 0px;
+        top: 0px;
+    }
+
+    #pastapic{
+        /* min-height: 400px; */
+        height: fit-content;
+        margin-left: 20px;
+        padding: 0px;
+        top: 0px;
+        margin-bottom: 20px;
+    }
+
+    #gnocchicontainer ul {
+        line-height: 1.5;
+    }
+
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+
+    .parallax { 
+        background-attachment: absolute;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    footer p {
+        animation: none;
+    }
+
+/* REMOVE FLIPCARD */
+
+  }

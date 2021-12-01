@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetBakedWithChloe</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+<body>
+    <div class="skip"><a href="#skiphere1">Skip to Main Content</a></div>
+    <header>
+        <h1>Get Baked With Chloe</h1>
+        <nav>
+            <ul class="nav_links">
+                <li class="current"><a href="portfolio.html">About</a></li>
+                <li class="notcurrent"><a href="baking.html">Baking</a></li>
+                <li class="notcurrent"><a href="cooking.html">Cooking</a></li>
+                <li class="notcurrent"><a href="recipes.html">Recipes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="parallax"></div>
+       <p class = "whoami" id="skiphere1">Hi! My name is Chloe Park! I love to bake and want to take you on my baking journey! To learn more about me, follow the links in the navigation to read more!</p> 
+        <div class = "topblurb">
+            <h2>Who am I?</h2>
+            <p>I am a lot of things. To start, I am a student at the Univerisity of Michigan. That's actually why I am making this website in the first place. 
+                It's all part of a project for my SI 339 class: Web Design and Accessibility. When trying to think of what to make for my portfolio project, I 
+                wanted to make sure the website would be something I was interested in creating, and also had the possibility of using again. 
+            </p>
+            <p>
+                Baking was the easy answer to all of this. I have loved to bake when I was in 6th grade, and it has taken over my life since. Every project since then
+                that I have been given even the slightest bit of personal creativity, I have tied back to baking. My eigth grade capstone project I made candy and blogged about it. 
+                Senior year, I dropped 3 classes for a senior project and baked my way through Julia Child's cookbooks. When applying both to the Univesity of Michigan and
+                 the University's School of Information, my personal essays correlated my love for baking to my analytic mindset (baking is an exact science,
+                 even if you may not know it). The list goes on and on. 
+            </p>
+            <p>On this website, I'll show you a little more about myself: my baking skills, my attempts at cooking healthy while on a time crunch in college, and my life overall. I hope you enjoy!</p>
+        </div>
+
+        <div class = "bio">
+            <img id="biopic" src="imgs/biopic.jpeg" alt = "This is a picture of me!">
+                <ul>
+                    <li>This is Me!</li>
+                    <li>Here are some fun facts!</li>
+                    <li>I was born in Canada</li>
+                    <li>I moved to Kansas when I was 2, and Atlanta when I was 5</li>
+                    <li>I started baking in 6th grade as a way to make some sweet treats to have around the house</li>
+                    <li>In high school, I took my baking skills up a notch, 
+                        and would sell customized baked goods to people in my community</li>
+                    <li>When I came to UMich, I stopped baking as much because I lived in and dorm and
+                        a sorority house for two years</li>
+                    <li>Now that I live in a house of my own, I am excited to get back into my passion!</li>
+                </ul>
+        </div>
+
+        <div class="container1">
+            <div id = "leftcontact">
+                <p id="contacts">Contact Me!</p>
+                <ul class="contactlist">
+                    <li>Phone number: <br> 404-277-2037</li>
+                    <li>Email: <br> capark@umich.edu</li>
+                    <li>Instagram: <br> <a href="https://www.instagram.com/getbakedwithchloe/">@GetBakedWithChloe</a></li>
+                </ul>
+            </div>
+
+            <form action = "https://formspree.io/f/xbjqnkpe" method = "post" id ="form">
+                <fieldset>
+                    <legend id = "formquestion">What recipes do you want to see?</legend>
+                    <div id="formbody">
+                        <div id = "line1">
+                            <label for="name">Name:</label>
+                            <input type="text" id = "name" name = "Name" placeholder = "Enter your name" required><br>
+                        </div>
+                        <div id="line2">
+                            <label>Email: 
+                                <input type= "text"  id = "email" name = "Email" placeholder = "Enter your email" required>
+                            </label><br>
+                        </div>
+                        <div id = "line3">
+                            <label>Recipes you want to see me make: <br><br>
+                                <input type= "text"  id = "recipeinput" name = "Recipe Suggestion" required>
+                            </label><br>
+                        </div>
+                        <input name = "submit" id= "submit" type="submit" value="Save!">
+                    </div>
+                </fieldset>
+            </form>
+
+        </div>
+
+    </main>
+    <div id = "bottomspacer">
+        <br><br>
+        <br><br>
+        <br><br>
+    </div>
+    <footer>
+        <p>Get Baked With Chloe &copy;<br/>
+          Check us out on <a href="https://www.instagram.com/getbakedwithchloe/">Instagram!</a></p>
+      </footer>
+</body>
+</html>
